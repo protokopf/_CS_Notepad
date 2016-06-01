@@ -19,11 +19,15 @@ namespace Notepad.ViewLayer.Commands
         }
         public void Execute()
         {
-            TabPage page = new TabPage(String.Format("new {0}",mTabControl.Controls.Count.ToString()));
-            page.Controls.Add(new RichTextBox());
-            page.Controls[0].Dock = DockStyle.Fill;
-            page.Controls[0].Text = mInnerText;
+            RichTextBox richTextBox = new RichTextBox();
+            richTextBox.Dock = DockStyle.Fill;
+            richTextBox.Text = mInnerText;
+
+            TabPage page = new TabPage(String.Format("new {0}", mTabControl.Controls.Count.ToString()));
+            page.Controls.Add(richTextBox);
+
             mTabControl.TabPages.Add(page);
+            mTabControl.SelectedTab = page;
         }
     }
 }

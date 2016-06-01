@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="ModelLayer\LayerBlocks\FIle.cs" />
     <Compile Include="ModelLayer\ModelLayer.cs" />
+    <Compile Include="ViewLayer\Commands\CloseTabCommand.cs" />
     <Compile Include="ViewLayer\Commands\CreateTabCommand.cs" />
     <Compile Include="ViewLayer\Commands\_ICommand.cs" />
     <Compile Include="ViewLayer\Forms\FindChangeForm.cs">
