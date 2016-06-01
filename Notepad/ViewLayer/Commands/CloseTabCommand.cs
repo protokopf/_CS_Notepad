@@ -18,7 +18,14 @@ namespace Notepad.ViewLayer.Commands
 
         public void Execute()
         {
-            mTabConrtol.TabPages.Remove(mTabConrtol.SelectedTab);
+            if (mTabConrtol.TabCount > 1)
+            {
+                int newIndex = mTabConrtol.SelectedIndex - 1;
+                if (newIndex < 0)
+                    newIndex = 0;
+                mTabConrtol.TabPages.Remove(mTabConrtol.SelectedTab);
+                mTabConrtol.SelectedIndex = newIndex;
+            }
         }
     }
 }

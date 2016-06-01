@@ -28,5 +28,17 @@ namespace Notepad.ViewLayer.Forms
         {
 
         }
+
+        private void toolStripCloseCurrent_Click(object sender, EventArgs e)
+        {
+            ICommand command = new CloseTabCommand(this.tabControl);
+            command.Execute();
+        }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ICommand command = new CreateTabCommand(this.tabControl, "blablablab");
+            command.Execute();
+        }
     }
 }

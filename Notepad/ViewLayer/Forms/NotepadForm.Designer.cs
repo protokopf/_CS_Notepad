@@ -85,8 +85,9 @@ namespace Notepad.ViewLayer.Forms
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newToolStripMenuItem.Text = "New";
+            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
@@ -181,6 +182,7 @@ namespace Notepad.ViewLayer.Forms
             this.toolStripCloseCurrent.Name = "toolStripCloseCurrent";
             this.toolStripCloseCurrent.Size = new System.Drawing.Size(23, 22);
             this.toolStripCloseCurrent.Text = "Close file";
+            this.toolStripCloseCurrent.Click += new System.EventHandler(this.toolStripCloseCurrent_Click);
             // 
             // toolStripCloseAll
             // 
