@@ -31,7 +31,7 @@ namespace Notepad.ViewLayer.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NotepadForm));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.blaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,29 +39,32 @@ namespace Notepad.ViewLayer.Forms
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.findToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.toolStripNewFile = new System.Windows.Forms.ToolStripButton();
             this.toolStripOpenFile = new System.Windows.Forms.ToolStripButton();
             this.toolStripSaveCurrent = new System.Windows.Forms.ToolStripButton();
             this.toolStripSaveAll = new System.Windows.Forms.ToolStripButton();
             this.toolStripCloseCurrent = new System.Windows.Forms.ToolStripButton();
             this.toolStripCloseAll = new System.Windows.Forms.ToolStripButton();
-            this.menuStrip1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.TabPage = new System.Windows.Forms.TabPage();
+            this.menuStrip.SuspendLayout();
+            this.toolStrip.SuspendLayout();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // menuStrip
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(228)))), ((int)(((byte)(255)))));
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.blaToolStripMenuItem,
             this.editToolStripMenuItem,
             this.searchToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(484, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(484, 24);
+            this.menuStrip.TabIndex = 0;
+            this.menuStrip.Text = "Menu";
             // 
             // blaToolStripMenuItem
             // 
@@ -111,20 +114,21 @@ namespace Notepad.ViewLayer.Forms
             this.findToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.findToolStripMenuItem.Text = "Find";
             // 
-            // toolStrip1
+            // toolStrip
             // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStrip.BackColor = System.Drawing.Color.Transparent;
+            this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripNewFile,
             this.toolStripOpenFile,
             this.toolStripSaveCurrent,
             this.toolStripSaveAll,
             this.toolStripCloseCurrent,
             this.toolStripCloseAll});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(484, 25);
-            this.toolStrip1.TabIndex = 1;
-            this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip.Location = new System.Drawing.Point(0, 24);
+            this.toolStrip.Name = "toolStrip";
+            this.toolStrip.Size = new System.Drawing.Size(484, 25);
+            this.toolStrip.TabIndex = 1;
+            this.toolStrip.Text = "Tools menu";
             // 
             // toolStripNewFile
             // 
@@ -133,7 +137,7 @@ namespace Notepad.ViewLayer.Forms
             this.toolStripNewFile.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripNewFile.Name = "toolStripNewFile";
             this.toolStripNewFile.Size = new System.Drawing.Size(23, 22);
-            this.toolStripNewFile.Text = "toolStripNewFIle";
+            this.toolStripNewFile.Text = "New file";
             // 
             // toolStripOpenFile
             // 
@@ -142,7 +146,7 @@ namespace Notepad.ViewLayer.Forms
             this.toolStripOpenFile.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripOpenFile.Name = "toolStripOpenFile";
             this.toolStripOpenFile.Size = new System.Drawing.Size(23, 22);
-            this.toolStripOpenFile.Text = "toolStripButton2";
+            this.toolStripOpenFile.Text = "Open file";
             // 
             // toolStripSaveCurrent
             // 
@@ -151,7 +155,7 @@ namespace Notepad.ViewLayer.Forms
             this.toolStripSaveCurrent.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSaveCurrent.Name = "toolStripSaveCurrent";
             this.toolStripSaveCurrent.Size = new System.Drawing.Size(23, 22);
-            this.toolStripSaveCurrent.Text = "toolStripButton3";
+            this.toolStripSaveCurrent.Text = "Save file";
             // 
             // toolStripSaveAll
             // 
@@ -160,7 +164,7 @@ namespace Notepad.ViewLayer.Forms
             this.toolStripSaveAll.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSaveAll.Name = "toolStripSaveAll";
             this.toolStripSaveAll.Size = new System.Drawing.Size(23, 22);
-            this.toolStripSaveAll.Text = "toolStripButton4";
+            this.toolStripSaveAll.Text = "Save all";
             // 
             // toolStripCloseCurrent
             // 
@@ -169,7 +173,7 @@ namespace Notepad.ViewLayer.Forms
             this.toolStripCloseCurrent.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripCloseCurrent.Name = "toolStripCloseCurrent";
             this.toolStripCloseCurrent.Size = new System.Drawing.Size(23, 22);
-            this.toolStripCloseCurrent.Text = "toolStripButton5";
+            this.toolStripCloseCurrent.Text = "Close file";
             // 
             // toolStripCloseAll
             // 
@@ -178,7 +182,27 @@ namespace Notepad.ViewLayer.Forms
             this.toolStripCloseAll.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripCloseAll.Name = "toolStripCloseAll";
             this.toolStripCloseAll.Size = new System.Drawing.Size(23, 22);
-            this.toolStripCloseAll.Text = "toolStripButton6";
+            this.toolStripCloseAll.Text = "Close all";
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.TabPage);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tabControl1.Location = new System.Drawing.Point(0, 49);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(484, 408);
+            this.tabControl1.TabIndex = 2;
+            // 
+            // TabPage
+            // 
+            this.TabPage.Location = new System.Drawing.Point(4, 22);
+            this.TabPage.Name = "TabPage";
+            this.TabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.TabPage.Size = new System.Drawing.Size(476, 382);
+            this.TabPage.TabIndex = 0;
+            this.TabPage.Text = "new1";
+            this.TabPage.UseVisualStyleBackColor = true;
             // 
             // NotepadForm
             // 
@@ -186,19 +210,21 @@ namespace Notepad.ViewLayer.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(484, 461);
-            this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.toolStrip);
+            this.Controls.Add(this.menuStrip);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.menuStrip;
             this.Name = "NotepadForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Notepad";
             this.TopMost = true;
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
+            this.toolStrip.ResumeLayout(false);
+            this.toolStrip.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,7 +232,7 @@ namespace Notepad.ViewLayer.Forms
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem blaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
@@ -214,13 +240,15 @@ namespace Notepad.ViewLayer.Forms
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem findToolStripMenuItem;
-        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStrip toolStrip;
         private System.Windows.Forms.ToolStripButton toolStripNewFile;
         private System.Windows.Forms.ToolStripButton toolStripOpenFile;
         private System.Windows.Forms.ToolStripButton toolStripSaveCurrent;
         private System.Windows.Forms.ToolStripButton toolStripSaveAll;
         private System.Windows.Forms.ToolStripButton toolStripCloseCurrent;
         private System.Windows.Forms.ToolStripButton toolStripCloseAll;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage TabPage;
     }
 }
 
