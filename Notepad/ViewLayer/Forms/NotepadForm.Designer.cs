@@ -85,19 +85,19 @@ namespace Notepad.ViewLayer.Forms
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newToolStripMenuItem.Text = "New";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "Open";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // editToolStripMenuItem
@@ -144,6 +144,7 @@ namespace Notepad.ViewLayer.Forms
             this.toolStripNewFile.Name = "toolStripNewFile";
             this.toolStripNewFile.Size = new System.Drawing.Size(23, 22);
             this.toolStripNewFile.Text = "New file";
+            this.toolStripNewFile.Click += new System.EventHandler(this.toolStripNewFile_Click);
             // 
             // toolStripOpenFile
             // 
@@ -223,6 +224,7 @@ namespace Notepad.ViewLayer.Forms
             this.statusStrip1.Size = new System.Drawing.Size(470, 22);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
+            this.statusStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
             // 
             // toolStripLength
             // 

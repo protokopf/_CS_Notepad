@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="ModelLayer\LayerBlocks\FIle.cs" />
     <Compile Include="ModelLayer\ModelLayer.cs" />
+    <Compile Include="ViewLayer\Commands\CreateTabCommand.cs" />
+    <Compile Include="ViewLayer\Commands\_ICommand.cs" />
     <Compile Include="ViewLayer\Forms\FindChangeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +64,7 @@
     </Compile>
     <Compile Include="StartPoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewLayer\LayerBlocks\CommandExecuter.cs" />
     <EmbeddedResource Include="ViewLayer\Forms\FindChangeForm.resx">
       <DependentUpon>FindChangeForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,7 +95,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="PresenterLayer\" />
-    <Folder Include="ViewLayer\Commands\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

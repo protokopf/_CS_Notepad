@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Notepad.ViewLayer.Commands;
 
 namespace Notepad.ViewLayer.Forms
 {
@@ -17,5 +18,15 @@ namespace Notepad.ViewLayer.Forms
             InitializeComponent();
         }
 
+        private void toolStripNewFile_Click(object sender, EventArgs e)
+        {
+            ICommand command = new CreateTabCommand(this.tabControl, "blablablab");
+            command.Execute();
+        }
+
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
