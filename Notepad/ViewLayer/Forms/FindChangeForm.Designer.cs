@@ -1,6 +1,6 @@
-﻿namespace Notepad
+﻿namespace Notepad.ViewLayer.Forms
 {
-    partial class Form1
+    partial class FindChangeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // FindChangeForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(284, 94);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "FindChangeForm";
+            this.Text = "Find";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-

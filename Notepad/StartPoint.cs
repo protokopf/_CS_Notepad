@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Notepad.ViewLayer.Forms;
 
 namespace Notepad
 {
-    static class Program
+    static class StartPoint
     {
         /// <summary>
         /// The main entry point for the application.
@@ -16,7 +17,7 @@ namespace Notepad
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new NotepadForm());
         }
     }
 }

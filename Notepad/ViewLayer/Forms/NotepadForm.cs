@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Notepad
+namespace Notepad.ViewLayer.Forms
 {
-    public partial class Form1 : Form
+    public partial class NotepadForm : Form
     {
-        public Form1()
+        public NotepadForm()
         {
             InitializeComponent();
         }

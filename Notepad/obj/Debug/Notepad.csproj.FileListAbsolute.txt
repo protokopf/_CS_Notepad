@@ -1,1 +1,9 @@
 E:\Программирование\С#\Notepad\Notepad\bin\Debug\Notepad.exe.config
+E:\Программирование\С#\Notepad\Notepad\bin\Debug\Notepad.exe
+E:\Программирование\С#\Notepad\Notepad\bin\Debug\Notepad.pdb
+E:\Программирование\С#\Notepad\Notepad\obj\Debug\Notepad.csprojResolveAssemblyReference.cache
+E:\Программирование\С#\Notepad\Notepad\obj\Debug\Notepad.Properties.Resources.resources
+E:\Программирование\С#\Notepad\Notepad\obj\Debug\Notepad.csproj.GenerateResource.Cache
+E:\Программирование\С#\Notepad\Notepad\obj\Debug\Notepad.exe
+E:\Программирование\С#\Notepad\Notepad\obj\Debug\Notepad.pdb
+E:\Программирование\С#\Notepad\Notepad\obj\Debug\Notepad.ViewLayer.Forms.NotepadForm.resources
