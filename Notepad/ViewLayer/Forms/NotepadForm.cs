@@ -16,5 +16,6 @@ namespace Notepad.ViewLayer.Forms
         {
             InitializeComponent();
         }
+
     }
 }
