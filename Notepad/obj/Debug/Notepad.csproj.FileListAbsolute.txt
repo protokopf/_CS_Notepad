@@ -1,0 +1,1 @@
+E:\Программирование\С#\Notepad\Notepad\bin\Debug\Notepad.exe.config
