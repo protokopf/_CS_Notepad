@@ -7,3 +7,4 @@ E:\Программирование\С#\Notepad\Notepad\obj\Debug\Notepad.csproj
 E:\Программирование\С#\Notepad\Notepad\obj\Debug\Notepad.exe
 E:\Программирование\С#\Notepad\Notepad\obj\Debug\Notepad.pdb
 E:\Программирование\С#\Notepad\Notepad\obj\Debug\Notepad.ViewLayer.Forms.NotepadForm.resources
+E:\Программирование\С#\Notepad\Notepad\obj\Debug\Notepad.ViewLayer.Forms.FindChangeForm.resources

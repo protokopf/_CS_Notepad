@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModelLayer\LayerBlocks\FIle.cs" />
+    <Compile Include="ModelLayer\ModelLayer.cs" />
     <Compile Include="ViewLayer\Forms\FindChangeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,7 +91,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ModelLayer\" />
     <Folder Include="PresenterLayer\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
