@@ -20,7 +20,7 @@ namespace Notepad.ViewLayer.Forms
 
         private void toolStripNewFile_Click(object sender, EventArgs e)
         {
-            ICommand command = new CreateTabCommand(this.tabControl, "blablablab");
+            ICommand command = new CreateTabCommand(this.tabControl, "blablablab",String.Format("new{0}", this.tabControl.TabCount.ToString()));
             command.Execute();
         }
 
@@ -37,8 +37,13 @@ namespace Notepad.ViewLayer.Forms
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ICommand command = new CreateTabCommand(this.tabControl, "blablablab");
-            command.Execute();
+            //ICommand command = new CreateTabCommand(this.tabControl, "blablablab");
+            //command.Execute();
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

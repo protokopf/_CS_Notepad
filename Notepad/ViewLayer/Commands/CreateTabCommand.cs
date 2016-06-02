@@ -10,10 +10,12 @@ namespace Notepad.ViewLayer.Commands
     class CreateTabCommand : ICommand
     {
         private string mInnerText;
+        private string mCaption;
         private TabControl mTabControl;
 
-        public CreateTabCommand(TabControl tab, string text)
+        public CreateTabCommand(TabControl tab, string text, string caption)
         {
+            mCaption = caption;
             mTabControl = tab;
             mInnerText = text;
         }
@@ -23,7 +25,7 @@ namespace Notepad.ViewLayer.Commands
             richTextBox.Dock = DockStyle.Fill;
             richTextBox.Text = mInnerText;
 
-            TabPage page = new TabPage(String.Format("new {0}", mTabControl.Controls.Count.ToString()));
+            TabPage page = new TabPage(mCaption);
             page.Controls.Add(richTextBox);
 
             mTabControl.TabPages.Add(page);

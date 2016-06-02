@@ -1,0 +1,1 @@
+To use this *.png files as shortcuts for programs you'll need a program like Objectdock or Rocketdock. These programs create dock- a bar on your screen with icons on it. then you can modyfy the existing icons with the ones provided here.
